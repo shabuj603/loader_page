@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+<style>
+   .dd, .transform{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(189, 43, 43);
+        margin: 0 auto;
+        margin-top: 150px;
+        box-shadow: 0px 0px 4px 4px rgb(54, 46, 46);
+        font-size: 25px;
+        vertical-align: middle;
+    }
+    .transform:hover{
+        transform: scale(2);
+        transform: scaleX(0.5);
+        transform: scaleY(0.6);
+        transform: skew(120deg);
+        transform: skewX(125deg);
+        transform: skewY(200deg);
+        transform: translate(125px, 200px);
+        transform: matrix(scaleX(),skewY(),skewX(),scaleX(),translateX(),translateY());
+        transform: skew(0.5); 
+        /* transform: scale(1.2) rotate(80deg); */
+        /* transform: skew(20deg, 20deg); */
+        /* transform: translate(150px, 250px); */
+        transform: matrix(1, 0, 0.5, 1, 150, 0);
+    }
+    .dd1{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(14, 23, 24);
+        margin: 10px ;
+        perspective: 200px;
+        transform: rotateY(60deg);
+        transform-style: preserve-3d;
+
+    }
+    .dd2 {
+        height: 200px;
+        width: 200px;
+        background-color: cadetblue;
+        transform: rotateX(50deg);
+        transition: transform 2s;
+        /* transform: rotate(180deg); */
+        /* transform-origin: right bottom; */
+        /* transform-origin: 200% 100%; */
+        transform-origin: left center;
+
+        
+    }
+    .f1{
+        height: 200px;
+        width: 200px;
+        background-color: chartreuse;
+    }
+    
+    .f2{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(63, 55, 38);
+        transition: all 2s;
+        transform: rotateX(360deg);
+        /* -webkit-box-reflect: below; */
+        /* box-reflect property : below, above, left , or right. */
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+
+    }
+    .f2:hover{
+        
+        transform-origin: 200% 100%;
+    }
+    .transation{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 20s;
+       
+    }
+    /* .transation:hover{
+        width: 300px;
+      
+    } */
+    /* @keyframes example{
+        form{
+            background-color:rgb(192, 176, 35);
+        }
+        to{
+            background-color: darkcyan;
+        }
+    } */
+    @keyframes example{
+        0%{
+            background-color:rgb(192, 176, 35);
+            left: 500px;
+        }
+        25%{
+            background-color: rgb(73, 155, 7);
+            top: 200px;
+        }
+        50%{
+            background-color: rgb(117, 219, 219);
+            right: -200px;
+        }
+        75%{
+            background-color: rgb(194, 25, 25);
+            bottom: 25px;
+        }
+        100%{
+            background-color: rgb(186, 247, 20);
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="transation">
+        solical icon
+    </div>
+    
+ <div class="dd1">
+     <div class="dd2">
+     </div>
+ </div>
+
+   
+ <div class="f1">
+    <div class="f2">
+    </div>
+</div>
+</body>
+</html>

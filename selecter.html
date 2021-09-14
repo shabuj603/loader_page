@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+<style>
+    /* .selecter > p{
+        background-color: rgb(47, 164, 172);
+    }
+    .selecter + h2+ p{
+        background-color: blueviolet;
+    }
+.selecter ~ p{
+    color:chartreuse
+} */
+input:checked {
+    09612003003
+      height: 50px;
+      width: 50px;
+    }
+    div > p:nth-child(1){
+        background-color: crimson;
+    }
+    div > p:nth-child(2n+1){
+        background-color:goldenrod;
+    }
+    div > p:nth-child(4){
+        background-color:cornflowerblue;
+    }
+    tr:nth-child(odd){
+        background-color: gray;
+    }
+    tr:hover:nth-child(even){
+        background-color: greenyellow;
+    }
+    table{
+        text-align: center;
+        border: 1px solid red;
+        
+    }
+    .opacity{
+        height: 300px;
+        width: 200px;
+        background-color: hotpink;
+        position: relative;
+        /* opacity: 0.1; */
+    }
+    .opacity::after{
+        content: 'Hello world! ';
+        position: absolute;
+        
+    }
+    .nuvbar{
+        margin: 0;
+        padding: 0;
+        /* background-color: hotpink; */
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: hotpink;
+        overflow: hidden;
+    }
+    ul li{
+   float: left;
+      
+    }
+    ul li:hover{
+       
+    }
+    ul li a{
+        margin-right: 10px;
+       display: block;
+        text-decoration: none;
+        padding: 20px;
+        background-color: indigo;
+        color:lavenderblush
+    } 
+    ul li a:active{
+        background-color: rgb(14, 15, 15);
+    }
+    .active{
+        background-color: teal;
+    }
+    ul li a:hover:not(.active){
+        background-color: tomato;
+    }
+  .dropdown{
+      position: relative;
+  }
+  .down_content{
+      display: inline-block;
+      position: re;
+      background-color: tomato;
+      color: thistle;
+  }
+</style>
+
+</head>
+<body> 
+
+   
+    
+    <div class="opacity">opacity herer</div>
+<form action="">
+    <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+    <input type="radio" value="female" name="gender"> Female<br>
+    <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+    <input type="checkbox" value="Car"> I have a car 
+  </form>
+    
+    <div class="selecter">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, officia!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, officia!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quis!</p>
+
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem odit eum modi ad rerum ducimus accusamus officia impedit aut doloremque!</p>
+
+    <table width="800" align="center">
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+
+        </tr>
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+
+        </tr>
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+
+        </tr>
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+
+        </tr>
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+            <td>aa</td>
+
+        </tr>
+    </table>
+
+
+</body>
+</html>

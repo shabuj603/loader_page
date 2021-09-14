@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+    <title>ifrem</title>
+<style>
+    .display_inline{
+        display: inline;
+        background-color: burlywood;
+        margin: 10px;
+    }
+    .block{
+        display: block;
+        background-color: cadetblue;
+    }
+    .inline_block{
+        display: inline-block;
+        background-color: chocolate;
+        margin: 10px;
+     }
+     .flex_content{
+         display: grid;
+         background-color: darkgoldenrod;
+         grid-template-columns: auto auto auto;
+         grid-template-rows: 40px 30px;
+         /* grid-column-gap:10px;
+         grid-row-gap:10px; */
+         grid-gap: 10px 20px;
+        
+
+     }
+
+     /*
+    .flex_content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px;
+    background-color: rgb(179, 176, 28);
+    }*/
+
+    .flex_content > div{
+        background-color: darkcyan;
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+        /* padding: 20px;
+        margin: 10px;
+        width: 10px; */
+       
+    } 
+    .item_line{
+        grid-column-start: 1;
+        grid-column-end:3;
+    }
+    .table_contait{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: table;
+}
+.main, .footerc{
+width: 21%;
+display: table-cell;
+background-color: chartreuse;
+    }
+
+input[type="text"]{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid red;
+    padding: 40px;
+    }
+    .posation{
+        position: relative;
+        height: 150px;
+        width: 200px;
+        background-color: teal;
+        /* overflow: hidden; */
+        opacity: 2;
+        z-index: 3;
+    }
+    .relative{
+        position: absolute;
+        height: 50px;
+        width: 100px;
+        border: 1px solid red;
+        background-color: yellowgreen;
+        top: 0;
+        right: -10px ;
+        overflow: hidden;
+        /* transform: rotate(90deg); */
+        text-align: center;
+        opacity: 1;
+        z-index: 2;
+    }
+    img{
+        height: 500px;
+        width: 600px;
+        filter: grayscale(200);
+        /* clip-path: circle(50%); */
+        clip:rect(200px, 60px, 20px, 30px);
+    }
+    .a{
+        float: left;
+        border: 1px solid red;
+    }
+    .b{
+        float: left;
+        clear: right;
+        border: 1px solid yellowgreen;
+    }
+    .z{
+        float: left;
+    }
+</style>
+
+
+
+</head>
+    
+ <body>
+<div class="z">
+<div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+<div class="b"><img src="image/laptop.jpg" alt=""></div>
+<div class="c">Lorem ipsum dolor sit amet.</div>
+</div>
+
+
+
+    <div class="posation">
+        <div class="relative">
+            New
+        </div>
+    </div>
+    <img src="image/birds.jpg" alt="">
+
+
+<input type="text">
+<input type="email">
+<input type="submit">
+
+<div class="table_contait">
+    <div class="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum.</div>
+    <div class="bodyc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum.</div>
+    <div class="footerc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum.</div>
+
+
+</div>
+
+
+     <div class="flex_content">        
+         <div class="item_line">5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+         <div>3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+
+     </div>
+     <div class="display_inline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, amet?</div>
+    <div class="block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dicta!</div>
+    <div class="inline_block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dicta!</div>
+
+</body>
+</html> 

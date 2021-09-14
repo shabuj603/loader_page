@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+<style>
+    .load{
+        height: 80px;
+        width: 80px;
+        /* background-color: teal; */
+        position: relative;
+        display: inline-block;
+        transform: translate(-50%, 379%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 379%);
+
+    }
+    .load div{
+        position:absolute;
+        display: inline-block;
+        width: 10px;
+        height: 30px;
+        background: teal;
+        animation-name: example;
+        animation-duration:2s;       
+        animation-iteration-count:infinite;
+    }
+    @keyframes example {
+        0%{
+           top:8px;
+           height:80px;
+        }
+        50%, 100%{
+            top:24px;
+           height: 40px;
+        }
+        
+    }
+  
+    .load div:nth-child(1){
+       animation-delay: -1s;
+       left: 8px;
+    }
+    .load div:nth-child(2){
+      left:20px;
+       animation-delay: -0.8s;
+    }
+    .load div:nth-child(3){
+       left: 32px;
+       animation-delay: -0.5s;
+    }
+   
+
+</style>
+
+</head>
+<body>
+ 
+    <div class="load">
+        <div class=""></div>
+        <div class=""></div>  
+        <div class=""></div>       
+    </div>
+</body>
+</html>

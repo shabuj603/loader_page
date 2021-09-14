@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D rotated</title>
+</head>
+<style>
+    .a {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 204, 127);
+        position: relative;
+        margin: 30px;
+        display: inline-block;
+    }
+
+    .b {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(7, 37, 27);
+        color: azure;
+        perspective: 1000px;
+        transition: all 3s;
+
+    }
+
+    .b:hover {
+        transform: rotate(50deg);
+        /* transform: skewX(20deg); */
+        /* transform: scaleX(2); */
+        /* transform: scale(2); */
+        transform: translate(0px, 100px);
+        /* transform-origin: left center; */
+    }
+
+    .c {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 204, 127);
+        position: relative;
+        margin-top: 30px;
+        margin-left: 60px;
+        display: inline-block;
+        transition: 5s;
+    }
+
+    .c:hover {
+        transform: rotateY(180deg);
+    }
+
+    .d {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(51, 34, 8);
+        position: relative;
+        margin-top: 30px;
+        margin-left: 90px;
+        display: inline-block;
+
+    }
+
+    .e {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(190, 22, 126);
+        position: absolute;
+        display: inline-block;
+        transform-origin: right bottom;
+        transition: 5s;
+    }
+
+    .e:hover {
+        transform: rotate(90deg);
+    }
+
+    .f {
+        height: 100px;
+        width: 100px;
+        margin-top: 30px;
+        margin-left: 120px;
+        background-color: rgb(187, 190, 22);
+        position: absolute;
+        display: inline-block;
+        transform-origin: right bottom;
+        transition: 5s;
+        transform: rotateX(45deg);
+        transform-style: preserve-3d;
+
+    }
+
+    .g {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(190, 22, 126);
+        position: absolute;
+        display: inline-block;
+        transform-origin: right bottom;
+        transition: 5s;
+        transform: rotateX(-45deg);
+    }
+
+
+    .flipcard{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        background-color: cadetblue;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ffront{
+        display: inline-block;
+    }
+    .ffront, .fback{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .fback{
+        background-color: cadetblue;
+    }
+</style>
+
+<body>
+    <div class="a">
+        <div class="b">rotated(deg)</div>
+    </div>
+
+    <div class="c">
+        <h1>2</h1>
+    </div>
+    <div class="d">
+        <div class="e">rotated(deg)</div>
+    </div>
+    <div class="f">
+        <div class="g">rotated(deg)</div>
+    </div>
+
+    <div class="flipcard">
+        <div class="ffront">
+            <img src="image/laptop.jpg" alt="">
+        </div>
+        <div class="fback">
+            i love India.
+        </div>
+    </div>
+</body>
+
+</html>

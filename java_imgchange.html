@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java validation</title>
+</head>
+<body>
+    <button id="about" onclick="aboutme()">know about me</button>
+    <p id="pa"></p>
+    <p id="pb"></p>
+    <button id="prin" onclick="window.print()">Print </button>
+    <button id="ssum" onclick="document.write(5 +2 )">total sum</button>
+    <p id="sum"></p>
+
+
+    <button id="sad" class="sad" onclick="sad()">Birds image</button>
+    <img src="image/tiger.jpg" alt="birds" height="200px" width="200px" id="image">
+    <button id="smile" class="smile" onclick="smile()"> Tiger image</button>
+
+
+
+    <input id="number">
+    <input type="submit" id="sub" class="sub" onclick="myfunction()">
+    <p id="show"></p>
+    <p id="change" onclick="change()">i love bangladesh</p>
+    
+</body>
+<script>
+    function aboutme(){
+        document.getElementById("pa").innerHTML= "hello dolly";
+        document.getElementById("pb").innerHTML= "How are you";
+
+    }
+
+    document.getElementById("sum").innerHTML= 5 + 6;
+ 
+function sad(){
+    document.getElementById('image').src="image/birds.jpg";
+}
+function smile(){
+    document.getElementById('image').src="image/tiger.jpg";
+}
+
+    function myfunction(){
+        var x, text;
+        var x = document.getElementById("number").value;
+        if(isNaN(x) || x > 10 || x < 1){
+            text = "input not valid";
+        }else{
+            text = "input successful";
+        }
+        document.getElementById("show").innerHTML= text;
+        document.getElementById("show").style.fontSize = "35px"; 
+        document.getElementById("show").style.color = "red";    
+
+
+    }
+    function change(){
+       document.getElementById("change").innerHTML="I love USA";
+    }
+</script>
+</html>

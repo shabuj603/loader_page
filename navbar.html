@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            float: left;
+            width: 100%; 
+            background-color: black;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          
+        }
+        ul li {
+            float: left;  
+            position: relative;
+            background-color: black;
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 20px;
+            color: whitesmoke;
+            /* margin: 10px; */
+        }
+        ul li a:hover{
+            background-color: rgb(177, 125, 125);
+        }
+        .select{
+            background-color: teal;
+        }
+        ul li a:hover:not(.select){
+            background-color: tomato;
+        }
+        ul li a:active{
+            background-color: violet;
+        }
+        .drop_down{
+            position: absolute;
+            background-color: black;
+            display: block;
+        }      
+
+        @media screen and (max-width: 600px) {
+      li {float: none;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="" class="select">about</a></li>
+            <li><a href="">Picture</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="">Contract</a>
+              <div class="drop_down">
+                  <a href="">Bangladesh</a>
+                  <a href="">Bangladesh</a>
+                  <a href="">Bangladesh</a>
+
+              </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
